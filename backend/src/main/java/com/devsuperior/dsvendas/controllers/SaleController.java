@@ -12,18 +12,19 @@ import com.devsuperior.dsvendas.dto.SaleDTO;
 import com.devsuperior.dsvendas.service.SaleService;
 
 @RestController
-@RequestMapping(value ="/sales")
+@RequestMapping(value = "/sale")
 public class SaleController {
-	
+
 	@Autowired
 	private SaleService service;
-	
+
 	@GetMapping
-	public ResponseEntity<Page<SaleDTO>> findAll(Pageable pageable){
+	public ResponseEntity<Page<SaleDTO>> findAll(Pageable pageable) {
 		Page<SaleDTO> list = service.findAll(pageable);
-		
 		return ResponseEntity.ok(list);
-		
-	} 
+
+	}
+	
+	
 
 }
