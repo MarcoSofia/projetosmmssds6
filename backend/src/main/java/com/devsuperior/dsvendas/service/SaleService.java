@@ -31,14 +31,16 @@ public class SaleService {
 	}
 	@Transactional(readOnly = true)
 	public List<SaleSumDTO> amountGroupedBySeller(){
-		return repository.amountGruopedBySeller();
+		return null;
+	
 		
 	}
 
-	
+	@Autowired
 	@Transactional(readOnly = true)
 	public List<SaleSuccessDTO> successGroupedBySeller(){
-		return repository.successGruopedBySeller();
+		return null;
+		
 		
 	}
 
