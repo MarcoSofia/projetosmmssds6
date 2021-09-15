@@ -17,6 +17,8 @@ import com.devsuperior.dsvendas.repositories.SellerRepository;
 
 @Service
 public class SaleService {
+	private static final int SaleSumDTO = 0;
+
 	@Autowired
 	private SaleRepository repository;
 
@@ -31,7 +33,7 @@ public class SaleService {
 	}
 	@Transactional(readOnly = true)
 	public List<SaleSumDTO> amountGroupedBySeller(){
-		return null;
+		return amountGroupedBySeller();
 	
 		
 	}
@@ -39,9 +41,12 @@ public class SaleService {
 	@Autowired
 	@Transactional(readOnly = true)
 	public List<SaleSuccessDTO> successGroupedBySeller(){
-		return null;
+		return successGroupedBySeller();
 		
 		
+	}
+	public static int getSalesumdto() {
+		return SaleSumDTO;
 	}
 
 }
