@@ -31,7 +31,7 @@ public class SaleService {
 	}
 	@Transactional(readOnly = true)
 	public List<SaleSumDTO> amountGroupedBySeller(){
-		return null;
+		return repository.amountGruopedBySeller();
 	
 		
 	}
@@ -39,7 +39,7 @@ public class SaleService {
 
 	@Transactional(readOnly = true)
 	public List<SaleSuccessDTO> successGroupedBySeller(){
-		return null;
+		return repository.successGroupedBySeller();
 		
 		
 	}
