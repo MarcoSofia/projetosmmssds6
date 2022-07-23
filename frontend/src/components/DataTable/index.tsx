@@ -50,7 +50,7 @@ const DataTable = () => {
                                 <td>{item.seller.name}</td>
                                 <td>{item.visited}</td>
                                 <td>{item.deals}</td>
-
+                                <td>{_item.amount.toFixed(2)}</td>
                             </tr>
 
                         ))}
