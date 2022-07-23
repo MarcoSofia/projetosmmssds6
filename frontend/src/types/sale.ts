@@ -2,6 +2,7 @@ import { Seller } from "./seller"
 export type Sale = {
     id: number;
     visited: number;
+    amount: number;
     deals: number;
     date: string;
     seller: Seller;
